@@ -30,7 +30,7 @@
             "ioValues": [
                 {
                     "name": "number or geometry",
-                    "ioValue": "45c9d7f2-ffca-46ff-9e9e-d57e6b708567"
+                    "ioValue": "34e5ae9c-770a-4950-86d1-306ca0394a79"
                 }
             ],
             "description": "Connect geometry here to make it available in the next level up. "
@@ -162,8 +162,8 @@
         {
             "atomType": "Fusion",
             "name": "Fusion",
-            "x": 0.6805745554035568,
-            "y": 0.3855421686746988,
+            "x": 0.6313269493844049,
+            "y": 0.2740963855421687,
             "uniqueID": "b3890f91-8fc5-42bd-ae5f-b37f800f2b11",
             "ioValues": [
                 {
@@ -247,8 +247,8 @@
         {
             "atomType": "Assembly",
             "name": "Assembly",
-            "x": 0.7859097127222983,
-            "y": 0.5542168674698795,
+            "x": 0.740766073871409,
+            "y": 0.4939759036144578,
             "uniqueID": "45c9d7f2-ffca-46ff-9e9e-d57e6b708567",
             "ioValues": [
                 {
@@ -265,8 +265,8 @@
         {
             "atomType": "Move",
             "name": "Move",
-            "x": 0.6114911080711354,
-            "y": 0.5481927710843374,
+            "x": 0.5683994528043775,
+            "y": 0.45481927710843373,
             "uniqueID": "77832b27-3e3d-4c79-8466-8af0dd3c9500",
             "ioValues": [
                 {
@@ -302,6 +302,32 @@
             ],
             "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
             "currentEquation": "-x"
+        },
+        {
+            "atomType": "Rotate",
+            "name": "Rotate",
+            "x": 0.8447332421340629,
+            "y": 0.6385542168674698,
+            "uniqueID": "34e5ae9c-770a-4950-86d1-306ca0394a79",
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": "45c9d7f2-ffca-46ff-9e9e-d57e6b708567"
+                },
+                {
+                    "name": "x-axis degrees",
+                    "ioValue": 0
+                },
+                {
+                    "name": "y-axis degrees",
+                    "ioValue": 180
+                },
+                {
+                    "name": "z-axis degrees",
+                    "ioValue": 0
+                }
+            ],
+            "description": "Rotates the input geometry around the X, Y, or Z axis. Inputs are degrees."
         }
     ],
     "allConnectors": [
@@ -440,10 +466,10 @@
         },
         {
             "ap1Name": "geometry",
-            "ap2Name": "number or geometry",
-            "ap2Primary": false,
+            "ap2Name": "geometry",
+            "ap2Primary": true,
             "ap1ID": "45c9d7f2-ffca-46ff-9e9e-d57e6b708567",
-            "ap2ID": "d16f3469-cd86-4a6f-bbd4-1aa674e8a4e8"
+            "ap2ID": "34e5ae9c-770a-4950-86d1-306ca0394a79"
         },
         {
             "ap1Name": "geometry",
@@ -458,6 +484,13 @@
             "ap2Primary": false,
             "ap1ID": "c365a884-f137-4946-9e24-446243be2957",
             "ap2ID": "77832b27-3e3d-4c79-8466-8af0dd3c9500"
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "number or geometry",
+            "ap2Primary": false,
+            "ap1ID": "34e5ae9c-770a-4950-86d1-306ca0394a79",
+            "ap2ID": "d16f3469-cd86-4a6f-bbd4-1aa674e8a4e8"
         }
     ],
     "unitsKey": "MM",
