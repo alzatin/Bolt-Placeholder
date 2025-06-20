@@ -16,6 +16,14 @@
         {
             "name": "tolerance",
             "ioValue": 0.1
+        },
+        {
+            "name": "Bolt head width",
+            "ioValue": 8
+        },
+        {
+            "name": "bolt head height",
+            "ioValue": 3
         }
     ],
     "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
@@ -39,7 +47,7 @@
             "atomType": "Input",
             "name": "bolt diameter",
             "x": 0.0231,
-            "y": 0.5240963855421688,
+            "y": 0.286144578313253,
             "uniqueID": "e45734ba-e952-4a02-937f-ac1bed9b3f58",
             "ioValues": [],
             "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable",
@@ -82,31 +90,16 @@
         {
             "atomType": "Circle",
             "name": "Circle",
-            "x": 0.24760601915184682,
-            "y": 0.5783132530120482,
+            "x": 0.2722298221614227,
+            "y": 0.5572289156626505,
             "uniqueID": "cbf94886-dab2-4ac4-b24e-6b397f747c13",
             "ioValues": [
                 {
                     "name": "diameter",
-                    "ioValue": 7.5
+                    "ioValue": 8
                 }
             ],
             "description": "Creates a new circle."
-        },
-        {
-            "atomType": "Equation",
-            "name": "x + 1.3",
-            "x": 0.18467852257181944,
-            "y": 0.5331325301204819,
-            "uniqueID": "265e323e-909d-4a19-b339-95d7b928d742",
-            "ioValues": [
-                {
-                    "name": "x",
-                    "ioValue": 6.2
-                }
-            ],
-            "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
-            "currentEquation": "x + 1.3"
         },
         {
             "atomType": "Extrude",
@@ -139,25 +132,10 @@
                 },
                 {
                     "name": "height",
-                    "ioValue": 1.25
+                    "ioValue": 3
                 }
             ],
             "description": "Extrudes a 2D shape. Input can be negitive. "
-        },
-        {
-            "atomType": "Equation",
-            "name": "x /8",
-            "x": 0.3543091655266758,
-            "y": 0.5120481927710844,
-            "uniqueID": "fe848a21-de43-45e1-8697-2e824ddf6c11",
-            "ioValues": [
-                {
-                    "name": "x",
-                    "ioValue": 10
-                }
-            ],
-            "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
-            "currentEquation": "x /8"
         },
         {
             "atomType": "Fusion",
@@ -283,7 +261,7 @@
                 },
                 {
                     "name": "zDist",
-                    "ioValue": -1.25
+                    "ioValue": -3
                 }
             ],
             "description": "Moves a shape laterally in X, Y, Z."
@@ -291,13 +269,13 @@
         {
             "atomType": "Equation",
             "name": "-x",
-            "x": 0.506155950752394,
-            "y": 0.6536144578313253,
+            "x": 0.45280437756497943,
+            "y": 0.6204819277108434,
             "uniqueID": "c365a884-f137-4946-9e24-446243be2957",
             "ioValues": [
                 {
                     "name": "x",
-                    "ioValue": 1.25
+                    "ioValue": 3
                 }
             ],
             "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
@@ -328,6 +306,26 @@
                 }
             ],
             "description": "Rotates the input geometry around the X, Y, or Z axis. Inputs are degrees."
+        },
+        {
+            "atomType": "Input",
+            "name": "Bolt head width",
+            "x": 0.0231,
+            "y": 0.42168674698795183,
+            "uniqueID": "63189f36-31e9-46a3-9ea5-84d8ff58c09d",
+            "ioValues": [],
+            "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable",
+            "type": "number"
+        },
+        {
+            "atomType": "Input",
+            "name": "bolt head height",
+            "x": 0.0231,
+            "y": 0.9216867469879518,
+            "uniqueID": "31d176d7-f757-47db-b74a-2984434708b1",
+            "ioValues": [],
+            "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable",
+            "type": "number"
         }
     ],
     "allConnectors": [
@@ -343,13 +341,6 @@
             "ap2Name": "x",
             "ap2Primary": false,
             "ap1ID": "e45734ba-e952-4a02-937f-ac1bed9b3f58",
-            "ap2ID": "265e323e-909d-4a19-b339-95d7b928d742"
-        },
-        {
-            "ap1Name": "number or geometry",
-            "ap2Name": "x",
-            "ap2Primary": false,
-            "ap1ID": "e45734ba-e952-4a02-937f-ac1bed9b3f58",
             "ap2ID": "25a535f1-fe42-42fc-9e7a-1873352fde6d"
         },
         {
@@ -358,13 +349,6 @@
             "ap2Primary": false,
             "ap1ID": "f9f8e4d6-f0f2-489d-a3ec-6cc07df8d30e",
             "ap2ID": "3f7ba3a2-f4f5-41c5-8956-7e5aae453105"
-        },
-        {
-            "ap1Name": "number or geometry",
-            "ap2Name": "x",
-            "ap2Primary": false,
-            "ap1ID": "f9f8e4d6-f0f2-489d-a3ec-6cc07df8d30e",
-            "ap2ID": "fe848a21-de43-45e1-8697-2e824ddf6c11"
         },
         {
             "ap1Name": "number or geometry",
@@ -395,13 +379,6 @@
             "ap2ID": "1236cd7c-8279-4ca3-b510-ccdf3f550db6"
         },
         {
-            "ap1Name": "result",
-            "ap2Name": "diameter",
-            "ap2Primary": false,
-            "ap1ID": "265e323e-909d-4a19-b339-95d7b928d742",
-            "ap2ID": "cbf94886-dab2-4ac4-b24e-6b397f747c13"
-        },
-        {
             "ap1Name": "geometry",
             "ap2Name": "Shape 1",
             "ap2Primary": false,
@@ -414,20 +391,6 @@
             "ap2Primary": true,
             "ap1ID": "1236cd7c-8279-4ca3-b510-ccdf3f550db6",
             "ap2ID": "77832b27-3e3d-4c79-8466-8af0dd3c9500"
-        },
-        {
-            "ap1Name": "result",
-            "ap2Name": "height",
-            "ap2Primary": false,
-            "ap1ID": "fe848a21-de43-45e1-8697-2e824ddf6c11",
-            "ap2ID": "1236cd7c-8279-4ca3-b510-ccdf3f550db6"
-        },
-        {
-            "ap1Name": "result",
-            "ap2Name": "x",
-            "ap2Primary": false,
-            "ap1ID": "fe848a21-de43-45e1-8697-2e824ddf6c11",
-            "ap2ID": "c365a884-f137-4946-9e24-446243be2957"
         },
         {
             "ap1Name": "geometry",
@@ -491,6 +454,27 @@
             "ap2Primary": false,
             "ap1ID": "34e5ae9c-770a-4950-86d1-306ca0394a79",
             "ap2ID": "d16f3469-cd86-4a6f-bbd4-1aa674e8a4e8"
+        },
+        {
+            "ap1Name": "number or geometry",
+            "ap2Name": "diameter",
+            "ap2Primary": false,
+            "ap1ID": "63189f36-31e9-46a3-9ea5-84d8ff58c09d",
+            "ap2ID": "cbf94886-dab2-4ac4-b24e-6b397f747c13"
+        },
+        {
+            "ap1Name": "number or geometry",
+            "ap2Name": "height",
+            "ap2Primary": false,
+            "ap1ID": "31d176d7-f757-47db-b74a-2984434708b1",
+            "ap2ID": "1236cd7c-8279-4ca3-b510-ccdf3f550db6"
+        },
+        {
+            "ap1Name": "number or geometry",
+            "ap2Name": "x",
+            "ap2Primary": false,
+            "ap1ID": "31d176d7-f757-47db-b74a-2984434708b1",
+            "ap2ID": "c365a884-f137-4946-9e24-446243be2957"
         }
     ],
     "unitsKey": "MM",
